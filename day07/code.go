@@ -118,7 +118,7 @@ func determineStrength(cards string) int {
 
 	result += actualCardStrength(cards)
 
-	return stringToNum(result)
+	return convertToNum(result)
 }
 
 func isFiveKind(mapper map[string]int) bool {
@@ -202,7 +202,7 @@ func isOnePair(mapper map[string]int) bool {
 	return false
 }
 
-func stringToNum(input string) int {
+func convertToNum(input string) int {
 	result, err := strconv.Atoi(input)
 	if err != nil {
 		panic(err)

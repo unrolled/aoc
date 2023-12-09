@@ -32,7 +32,7 @@ func PartTwo() int {
 		raceDistance += strconv.Itoa(race.Distance)
 	}
 
-	return waysToWin(stringToNum(raceTime), stringToNum(raceDistance))
+	return waysToWin(convertToNum(raceTime), convertToNum(raceDistance))
 }
 
 func parseInput(input string) []*Race {
@@ -42,7 +42,7 @@ func parseInput(input string) []*Race {
 
 	var races []*Race
 	for i := 0; i < len(times); i++ {
-		races = append(races, &Race{Time: stringToNum(times[i]), Distance: stringToNum(distances[i])})
+		races = append(races, &Race{Time: convertToNum(times[i]), Distance: convertToNum(distances[i])})
 	}
 
 	return races
@@ -64,7 +64,7 @@ func waysToWin(raceTime, raceDistance int) int {
 	return waysToWin
 }
 
-func stringToNum(input string) int {
+func convertToNum(input string) int {
 	result, err := strconv.Atoi(input)
 	if err != nil {
 		panic(err)
