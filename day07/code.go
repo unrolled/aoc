@@ -27,11 +27,7 @@ type Hand struct {
 }
 
 func PartOne() int {
-	// 	INPUT = `32T3K 765
-	// T55J5 684
-	// KK677 28
-	// KTJJT 220
-	// QQQJA 483`
+	// INPUT = "32T3K 765\nT55J5 684\nKK677 28\nKTJJT 220\nQQQJA 483"
 	lines := strings.Split(INPUT, "\n")
 
 	hands := []*Hand{}
@@ -53,11 +49,7 @@ func PartOne() int {
 }
 
 func PartTwo() int {
-	// 	INPUT = `32T3K 765
-	// T55J5 684
-	// KK677 28
-	// KTJJT 220
-	// QQQJA 483`
+	// INPUT = "32T3K 765\nT55J5 684\nKK677 28\nKTJJT 220\nQQQJA 483"
 	INPUT = strings.ReplaceAll(INPUT, "J", Joker)
 
 	return PartOne()

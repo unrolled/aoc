@@ -10,18 +10,7 @@ var gearRation = map[string][]int{}
 var lines = []string{}
 
 func PartOne() int {
-	// 	INPUT = `
-	// 467..114..
-	// ...*......
-	// ..35..633.
-	// ......#...
-	// 617*......
-	// .....+.58.
-	// ..592.....
-	// ......755.
-	// ...$.*....
-	// .664.598..
-	// `
+	// INPUT = "467..114..\n...*......\n..35..633.\n......#...\n617*......\n.....+.58.\n..592.....\n......755.\n...$.*....\n.664.598.."
 	lines = strings.Split(INPUT, "\n")
 	lines = append([]string{strings.Repeat(".", len(lines[0]))}, lines...)
 	lines = append(lines, strings.Repeat(".", len(lines[0])))
@@ -94,6 +83,7 @@ func getNumbers(current, top, bottom int) (results []int) {
 
 	return
 }
+
 func hasAdjacentSymbol(current, top, bottom, start, end, value int) bool {
 	if start > 0 {
 		start -= 1
