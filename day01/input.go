@@ -1,5 +1,7 @@
 package day01
 
+const Title = "Day 1: Trebuchet?!"
+
 var INPUT = `hcpjssql4kjhbcqzkvr2fivebpllzqbkhg
 4threethreegctxg3dmbm1
 1lxk2hfmcgxtmps89mdvkl

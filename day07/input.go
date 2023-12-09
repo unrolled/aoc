@@ -1,5 +1,7 @@
 package day07
 
+const Title = "Day 7: Camel Cards"
+
 var INPUT = `3Q373 470
 K53JT 351
 A9JK9 856

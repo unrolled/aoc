@@ -13,6 +13,7 @@ import (
 	"github.com/unrolled/adventofcode/day06"
 	"github.com/unrolled/adventofcode/day07"
 	"github.com/unrolled/adventofcode/day08"
+	"github.com/unrolled/adventofcode/day09"
 )
 
 type Advent struct {
@@ -22,14 +23,15 @@ type Advent struct {
 }
 
 var adventDays = []Advent{
-	{Title: "Day 1: Trebuchet?!", PartOne: day01.PartOne, PartTwo: day01.PartTwo},
-	{Title: "Day 2: Cube Conundrum", PartOne: day02.PartOne, PartTwo: day02.PartTwo},
-	{Title: "Day 3: Gear Ratios", PartOne: day03.PartOne, PartTwo: day03.PartTwo},
-	{Title: "Day 4: Scratchcards", PartOne: day04.PartOne, PartTwo: day04.PartTwo},
-	{Title: "Day 5: If You Give A Seed A Fertilizer", PartOne: day05.PartOne, PartTwo: day05.PartTwo},
-	{Title: "Day 6: Wait For It", PartOne: day06.PartOne, PartTwo: day06.PartTwo},
-	{Title: "Day 7: Camel Cards", PartOne: day07.PartOne, PartTwo: day07.PartTwo},
-	{Title: "Day 8: Haunted Wasteland", PartOne: day08.PartOne, PartTwo: day08.PartTwo},
+	{Title: day01.Title, PartOne: day01.PartOne, PartTwo: day01.PartTwo},
+	{Title: day02.Title, PartOne: day02.PartOne, PartTwo: day02.PartTwo},
+	{Title: day03.Title, PartOne: day03.PartOne, PartTwo: day03.PartTwo},
+	{Title: day04.Title, PartOne: day04.PartOne, PartTwo: day04.PartTwo},
+	{Title: day05.Title, PartOne: day05.PartOne, PartTwo: day05.PartTwo},
+	{Title: day06.Title, PartOne: day06.PartOne, PartTwo: day06.PartTwo},
+	{Title: day07.Title, PartOne: day07.PartOne, PartTwo: day07.PartTwo},
+	{Title: day08.Title, PartOne: day08.PartOne, PartTwo: day08.PartTwo},
+	{Title: day09.Title, PartOne: day09.PartOne, PartTwo: day09.PartTwo},
 }
 
 func main() {
