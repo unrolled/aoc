@@ -1,6 +1,7 @@
 package day14
 
 import (
+	"math"
 	"strings"
 )
 
@@ -37,14 +38,11 @@ func (d *Data) String() string {
 }
 
 func (d *Data) Spin(times int) {
-	for i := 0; i < times; i++ {
+	for i := 1; i <= times; i++ {
 		key := d.String()
 		if val, exists := d.spinHistory[key]; exists {
-			step := i - val - 1
-			if i+step < times {
-				i += step
-				continue
-			}
+			step := i - val
+			i += int(math.Floor(float64((times-i))/float64(step))) * step
 		}
 
 		d.TiltNorth()
