@@ -21,6 +21,7 @@ import (
 	"github.com/unrolled/aoc/day14"
 	"github.com/unrolled/aoc/day15"
 	"github.com/unrolled/aoc/day16"
+	"github.com/unrolled/aoc/day17"
 )
 
 type Advent struct {
@@ -46,6 +47,7 @@ var adventDays = []Advent{
 	{Title: day14.Title, PartOne: day14.PartOne, PartTwo: day14.PartTwo},
 	{Title: day15.Title, PartOne: day15.PartOne, PartTwo: day15.PartTwo},
 	{Title: day16.Title, PartOne: day16.PartOne, PartTwo: day16.PartTwo},
+	{Title: day17.Title, PartOne: day17.PartOne, PartTwo: day17.PartTwo},
 }
 
 func main() {
@@ -74,12 +76,22 @@ func runWithTimer(adventDay Advent) int64 {
 	partOneStartTime := time.Now()
 	partOneResult := adventDay.PartOne()
 	partOneDuration := time.Now().Sub(partOneStartTime)
-	fmt.Printf("  %s %s %s\n", termBlue("Part 1:"), termGreen("%d", partOneResult), termYellow("(%v)", partOneDuration))
+	if partOneResult != -1 {
+		fmt.Printf("  %s %s %s\n", termBlue("Part 1:"), termGreen("%d", partOneResult), termYellow("(%v)", partOneDuration))
+	} else {
+		fmt.Printf("  %s %s\n", termBlue("Part 1:"), termGrey("SKIPPED"))
+		partOneDuration = 0
+	}
 
 	partTwoStartTime := time.Now()
 	partTwoResult := adventDay.PartTwo()
 	partTwoDuration := time.Now().Sub(partTwoStartTime)
-	fmt.Printf("  %s %s %s\n", termBlue("Part 2:"), termGreen("%d", partTwoResult), termYellow("(%v)", partTwoDuration))
+	if partTwoResult != -1 {
+		fmt.Printf("  %s %s %s\n", termBlue("Part 2:"), termGreen("%d", partTwoResult), termYellow("(%v)", partTwoDuration))
+	} else {
+		fmt.Printf("  %s %s\n", termBlue("Part 2:"), termGrey("SKIPPED"))
+		partTwoDuration = 0
+	}
 
 	return partOneDuration.Nanoseconds() + partTwoDuration.Nanoseconds()
 }
@@ -98,4 +110,7 @@ func termBlue(format string, a ...any) string {
 }
 func termPurple(format string, a ...any) string {
 	return "\033[35m" + fmt.Sprintf(format, a...) + "\033[0m"
+}
+func termGrey(format string, a ...any) string {
+	return "\033[90m" + fmt.Sprintf(format, a...) + "\033[0m"
 }
