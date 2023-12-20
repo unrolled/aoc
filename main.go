@@ -24,6 +24,7 @@ import (
 	"github.com/unrolled/aoc/day17"
 	"github.com/unrolled/aoc/day18"
 	"github.com/unrolled/aoc/day19"
+	"github.com/unrolled/aoc/day20"
 )
 
 type Advent struct {
@@ -52,6 +53,7 @@ var adventDays = []Advent{
 	{Title: day17.Title, PartOne: day17.PartOne, PartTwo: day17.PartTwo},
 	{Title: day18.Title, PartOne: day18.PartOne, PartTwo: day18.PartTwo},
 	{Title: day19.Title, PartOne: day19.PartOne, PartTwo: day19.PartTwo},
+	{Title: day20.Title, PartOne: day20.PartOne, PartTwo: day20.PartTwo},
 }
 
 func main() {
