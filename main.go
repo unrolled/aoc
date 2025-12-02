@@ -6,24 +6,24 @@ import (
 	"time"
 
 	"github.com/unrolled/aoc/2025/day01"
-	// "github.com/unrolled/2025/aoc/day02"
-	// "github.com/unrolled/2025/aoc/day03"
-	// "github.com/unrolled/2025/aoc/day04"
-	// "github.com/unrolled/2025/aoc/day05"
-	// "github.com/unrolled/2025/aoc/day06"
-	// "github.com/unrolled/2025/aoc/day07"
-	// "github.com/unrolled/2025/aoc/day08"
-	// "github.com/unrolled/2025/aoc/day09"
-	// "github.com/unrolled/2025/aoc/day10"
-	// "github.com/unrolled/2025/aoc/day11"
-	// "github.com/unrolled/2025/aoc/day12"
+	"github.com/unrolled/aoc/2025/day02"
+	// "github.com/unrolled/aoc/2025/day03"
+	// "github.com/unrolled/aoc/2025/day04"
+	// "github.com/unrolled/aoc/2025/day05"
+	// "github.com/unrolled/aoc/2025/day06"
+	// "github.com/unrolled/aoc/2025/day07"
+	// "github.com/unrolled/aoc/2025/day08"
+	// "github.com/unrolled/aoc/2025/day09"
+	// "github.com/unrolled/aoc/2025/day10"
+	// "github.com/unrolled/aoc/2025/day11"
+	// "github.com/unrolled/aoc/2025/day12"
 )
 
 const year = "2025"
 
 var adventDays = []Advent{
 	{Title: day01.Title, PartOne: day01.PartOne, PartTwo: day01.PartTwo},
-	// {Title: day02.Title, PartOne: day02.PartOne, PartTwo: day02.PartTwo},
+	{Title: day02.Title, PartOne: day02.PartOne, PartTwo: day02.PartTwo},
 	// {Title: day03.Title, PartOne: day03.PartOne, PartTwo: day03.PartTwo},
 	// {Title: day04.Title, PartOne: day04.PartOne, PartTwo: day04.PartTwo},
 	// {Title: day05.Title, PartOne: day05.PartOne, PartTwo: day05.PartTwo},
