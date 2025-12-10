@@ -13,7 +13,7 @@ import (
 	"github.com/unrolled/aoc/2025/day06"
 	"github.com/unrolled/aoc/2025/day07"
 	"github.com/unrolled/aoc/2025/day08"
-	// "github.com/unrolled/aoc/2025/day09"
+	"github.com/unrolled/aoc/2025/day09"
 	// "github.com/unrolled/aoc/2025/day10"
 	// "github.com/unrolled/aoc/2025/day11"
 	// "github.com/unrolled/aoc/2025/day12"
@@ -30,7 +30,7 @@ var adventDays = []Advent{
 	{Title: day06.Title, PartOne: day06.PartOne, PartTwo: day06.PartTwo},
 	{Title: day07.Title, PartOne: day07.PartOne, PartTwo: day07.PartTwo},
 	{Title: day08.Title, PartOne: day08.PartOne, PartTwo: day08.PartTwo},
-	// {Title: day09.Title, PartOne: day09.PartOne, PartTwo: day09.PartTwo},
+	{Title: day09.Title, PartOne: day09.PartOne, PartTwo: day09.PartTwo},
 	// {Title: day10.Title, PartOne: day10.PartOne, PartTwo: day10.PartTwo},
 	// {Title: day11.Title, PartOne: day11.PartOne, PartTwo: day11.PartTwo},
 	// {Title: day12.Title, PartOne: day12.PartOne, PartTwo: day12.PartTwo},
